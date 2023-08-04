@@ -25,8 +25,11 @@
 }
 .item-block
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    background-color: salmon;
+    /* background-color: salmon; */
 }
 
 .item-nav
@@ -108,7 +111,7 @@
     justify-content: space-evenly;
     gap: 0 61.11%;
 }
-.cointainer-recentPost-top >a
+.cointainer-recentPost-top > a
 {
     text-decoration: none;
     
@@ -124,11 +127,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:200px; 
+    gap:9.5px; 
 }
 .item-recentPost
 {
-    width: 33.33%;
+    width: 40%;
     height: 300px;
     background-color:green;
     border: 1px solid black;
@@ -156,45 +159,62 @@
     flex-direction: column;
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: 400px;
     margin-top: var(--containerSpace);
 
     align-items: center;
-
-
 }
 .container-featureWork-T
 {
     width: 100%;
     height: 50px;
-
-    background-color: palegoldenrod;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    
+    align-items: center;
 }
+.container-featureWork-T > p
+{
+    margin-left: 150px;
+}
+
 .container-featureWork-B
 {
     width: 98%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 150px;
 }
 .item-block
 {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    margin: 25px 12.5px ; /*y x*/
+    width: 30%;
+    height: 300px;
+    /* background-color: white; */
+}
+.item-block-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     margin: 25px 12.5px ;
-    width: 40%;
-    height: 400px;
-    background-color: white;
-    
+    width: 50%;
+    height: 300px;
 }
 .item-block>img
 {
     height: 100%;
+    width: 80%;
 }
 .content-featureWork-up
 {
     width: 100%;
-    height: 45%;
+    height: 20%;
     background-color: beige;
 }
 .container-featureWork-center
@@ -208,30 +228,42 @@
 
 .item-featureWork-center-L
 {
-    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    width: 15%;
     height: 100%;
     background-color: rgb(0, 217, 255);
 }
 .item-featureWork-center-R
 {
-    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    width: 85%;
     height: 100%;
     background-color: rgb(255, 0, 230);
 }
 .content-featureWork-down
 {
     width: 100%;
-    height: 45%;
+    height: 80%;
+    margin-top: 20px;
     background-color: orange;
 }
+.content-featureWork-down > p
+{
+    margin-top: 20px;
+}
+
+
+
 .blog
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
 .container-blog
 {
     display: flex;
