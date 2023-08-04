@@ -174,7 +174,7 @@
     
     align-items: center;
 }
-.container-featureWork-T > p
+.container-featureWork-T > p,h1
 {
     margin-left: 150px;
 }
@@ -317,12 +317,21 @@
 {
     display: flex;
 }
-.content-blog-B
+.box-flex
 {
-    
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.box-flex > img
+{
+    width: 500px;
+    height: 400px;
+    align-self: center;
     
 }
 .space-box
 {
     margin-bottom: 10px;
 }
+
